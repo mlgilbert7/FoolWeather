@@ -83,7 +83,6 @@
     <Compile Include="Models\WeatherTest.cs" />
     <Compile Include="Models\WindTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\HomeControllerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />

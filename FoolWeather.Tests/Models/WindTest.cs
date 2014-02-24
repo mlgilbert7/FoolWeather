@@ -56,6 +56,12 @@ namespace FoolWeather.Tests.Models
         }
 
         [TestMethod]
+        public void TestVariableDirectionWinds()
+        {
+            Assert.AreEqual("variable directions", Wind.WindDirection(999));
+        }
+
+        [TestMethod]
         public void TestSomeRandomValues()
         {
             Assert.AreEqual("N", Wind.WindDirection(0f));

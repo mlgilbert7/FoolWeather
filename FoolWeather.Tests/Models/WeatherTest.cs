@@ -58,7 +58,7 @@ namespace FoolWeather.Tests.Models
             Assert.AreEqual("SSW", _weather.WindDirection);
             Assert.AreEqual("22 knots", _weather.WindGust);
             Assert.AreEqual("15 knots", _weather.WindSpeed);
-            Assert.AreEqual("Winds from the SSW at 15 knots with gusts to 22 knots", _weather.WindDescription);
+            Assert.AreEqual("Winds from SSW at 15 knots with gusts to 22 knots", _weather.WindDescription);
         }
 
         private void VerifyEvanstonLocation()
