@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<dwml version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd">
+  <head>
+    <product concise-name="dwmlByDay" operational-mode="developmental" srsName="WGS 1984">
+      <creation-date refresh-frequency='PT1H'>2014-02-18T18:53:14-06:00</creation-date>
+      <category>current observations and forecast</category>
+    </product>
+    <source>
+      <production-center>Chicago, IL</production-center>
+      <credit>http://www.crh.noaa.gov/lot</credit>
+      <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
+    </source>
+  </head>
+  <data type="forecast">
+
+    <location>
+      <location-key>point1</location-key>
+      <description>Evanston, IL</description>
+      <point latitude="42.03" longitude="-87.69"/>
+      <city state="IL">Evanston</city>
+      <height datum="mean sea level">597</height>
+    </location>
+    <moreWeatherInformation applicable-location="point1">http://forecast.weather.gov/MapClick.php?lat=42.03&amp;lon=-87.69</moreWeatherInformation>
+    <time-layout time-coordinate="local" summarization="12hourly">
+      <layout-key>k-p6h-n1-1</layout-key>
+      <start-valid-time>2014-02-18T19:00:00-06:00</start-valid-time>
+      <end-valid-time>2014-02-25T18:00:00-06:00</end-valid-time>
+    </time-layout>
+
+    <time-layout time-coordinate="local" summarization="12hourly">
+      <layout-key>k-p12h-n14-1</layout-key>
+      <start-valid-time period-name="Tonight">2014-02-18T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Wednesday">2014-02-19T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Wednesday Night">2014-02-19T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Thursday">2014-02-20T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Thursday Night">2014-02-20T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Friday">2014-02-21T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Friday Night">2014-02-21T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Saturday">2014-02-22T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Saturday Night">2014-02-22T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Sunday">2014-02-23T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Sunday Night">2014-02-23T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Monday">2014-02-24T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Monday Night">2014-02-24T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Tuesday">2014-02-25T06:00:00-06:00</start-valid-time>
+    </time-layout>
+
+    <time-layout time-coordinate="local" summarization="12hourly">
+      <layout-key>k-p24h-n7-1</layout-key>
+      <start-valid-time period-name="Tonight">2014-02-18T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Wednesday Night">2014-02-19T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Thursday Night">2014-02-20T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Friday Night">2014-02-21T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Saturday Night">2014-02-22T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Sunday Night">2014-02-23T18:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Monday Night">2014-02-24T18:00:00-06:00</start-valid-time>
+    </time-layout>
+
+    <time-layout time-coordinate="local" summarization="12hourly">
+      <layout-key>k-p24h-n7-2</layout-key>
+      <start-valid-time period-name="Wednesday">2014-02-19T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Thursday">2014-02-20T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Friday">2014-02-21T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Saturday">2014-02-22T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Sunday">2014-02-23T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Monday">2014-02-24T06:00:00-06:00</start-valid-time>
+      <start-valid-time period-name="Tuesday">2014-02-25T06:00:00-06:00</start-valid-time>
+    </time-layout>
+
+
+    <parameters applicable-location="point1">
+
+      <temperature type="minimum" units="Fahrenheit" time-layout="k-p24h-n7-1">
+        <name>Daily Minimum Temperature</name>
+        <value>29</value>
+        <value>31</value>
+        <value>25</value>
+        <value>19</value>
+        <value>13</value>
+        <value>10</value>
+        <value>11</value>
+      </temperature>
+
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n7-2">
+        <name>Daily Maximum Temperature</name>
+        <value>38</value>
+        <value>45</value>
+        <value>32</value>
+        <value>27</value>
+        <value>23</value>
+        <value>21</value>
+        <value>22</value>
+      </temperature>
+
+      <probability-of-precipitation  type="12 hour" units="percent" time-layout="k-p12h-n14-1">
+        <name>12 Hourly Probability of Precipitation</name>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value>60</value>
+        <value>100</value>
+        <value>30</value>
+        <value xsi:nil="true"></value>
+        <value>20</value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+        <value xsi:nil="true"></value>
+      </probability-of-precipitation>
+
+      <weather time-layout="k-p12h-n14-1">
+        <name>Weather Type, Coverage, Intensity</name>
+        <weather-conditions weather-summary="Breezy"/>
+        <weather-conditions weather-summary="Increasing Clouds"/>
+        <weather-conditions weather-summary="Freezing Rain Likely"/>
+        <weather-conditions weather-summary="Rain"/>
+        <weather-conditions weather-summary="Chance Rain/Snow"/>
+        <weather-conditions weather-summary="Breezy"/>
+        <weather-conditions weather-summary="Slight Chc Snow"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Mostly Cloudy"/>
+        <weather-conditions weather-summary="Mostly Sunny"/>
+        <weather-conditions weather-summary="Mostly Cloudy"/>
+        <weather-conditions weather-summary="Partly Sunny"/>
+        <weather-conditions weather-summary="Slight Chc Snow"/>
+        <weather-conditions weather-summary="Slight Chc Snow"/>
+      </weather>
+
+      <conditions-icon type="forecast-NWS" time-layout="k-p12h-n14-1">
+        <name>Conditions Icon</name>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/nwind.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/sct.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/fzra60.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/ra100.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/nrasn30.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/wind.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/nsn20.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/bkn.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/nbkn.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/sct.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/nbkn.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/bkn.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/nsn.png</icon-link>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/sn.png</icon-link>
+      </conditions-icon>
+
+      <hazards time-layout="k-p6h-n1-1">
+        <name>Watches, Warnings, and Advisories</name>
+        <hazard-conditions>
+          <hazard headline="Hydrologic Outlook">
+            <hazardTextURL>http://forecast.weather.gov/showsigwx.php?warnzone=ILZ014&amp;warncounty=ILC031&amp;firewxzone=ILZ014&amp;local_place1=Evanston+IL&amp;product1=Hydrologic+Outlook</hazardTextURL>
+          </hazard>
+        </hazard-conditions>
+      </hazards>
+
+      <wordedForecast time-layout="k-p12h-n14-1" dataSource="lotNetcdf" wordGenerator="markMitchell">
+        <name>Text Forecast</name>
+        <text>Mostly cloudy, with a low around 29. Breezy, with a southwest wind 10 to 20 mph becoming west northwest after midnight. </text>
+        <text>Increasing clouds, with a high near 38. West northwest wind around 10 mph becoming south southwest in the afternoon. </text>
+        <text>Rain or freezing rain likely after midnight. Some thunder is also possible.  Cloudy, with a low around 31. South southwest wind 5 to 10 mph becoming east southeast after midnight. Winds could gust as high as 15 mph.  Chance of precipitation is 60%. New ice accumulation of less than a 0.1 of an inch possible. </text>
+        <text>Rain and possibly a thunderstorm before noon, then occasional showers and possibly a thunderstorm after noon.  Areas of fog. High near 45. Breezy, with an east southeast wind 15 to 20 mph becoming south in the afternoon. Winds could gust as high as 30 mph.  Chance of precipitation is 100%.</text>
+        <text>Scattered rain and snow showers before midnight.  Mostly cloudy, with a low around 25. Windy, with a west southwest wind 25 to 30 mph, with gusts as high as 40 mph.  Chance of precipitation is 30%.</text>
+        <text>Mostly sunny, with a high near 32. Breezy. </text>
+        <text>A 20 percent chance of snow.  Mostly cloudy, with a low around 19.</text>
+        <text>Partly sunny, with a high near 27.</text>
+        <text>Mostly cloudy, with a low around 13.</text>
+        <text>Mostly sunny, with a high near 23.</text>
+        <text>Mostly cloudy, with a low around 10.</text>
+        <text>Partly sunny, with a high near 21.</text>
+        <text>A slight chance of snow.  Mostly cloudy, with a low around 11.</text>
+        <text>A slight chance of snow.  Mostly cloudy, with a high near 22.</text>
+      </wordedForecast>
+
+    </parameters>
+  </data>
+  <data type="current observations">
+    <location>
+      <location-key>point1</location-key>
+      <point latitude="41.98" longitude="-87.9"/>
+      <area-description>Chicago/O'Hare, IL</area-description>
+      <height datum="mean sea level" height-units="feet">658</height>
+    </location>
+    <moreWeatherInformation applicable-location="point1">http://www.nws.noaa.gov/data/obhistory/KORD.html</moreWeatherInformation>
+    <time-layout time-coordinate="local">
+      <layout-key>k-p1h-n1-1</layout-key>
+      <start-valid-time period-name="current">2014-02-18T18:51:00-06:00</start-valid-time>
+    </time-layout>
+    <parameters applicable-location="point1">
+      <temperature type="apparent" units="Fahrenheit" time-layout="k-p1h-n1-1">
+        <value>42</value>
+      </temperature>
+      <temperature type="dew point" units="Fahrenheit" time-layout="k-p1h-n1-1">
+        <value>27</value>
+      </temperature>
+      <humidity type="relative" time-layout="k-p1h-n1-1">
+        <value>55</value>
+      </humidity>
+      <weather time-layout="k-p1h-n1-1">
+        <name>Weather Type, Coverage, Intensity</name>
+        <weather-conditions weather-summary="Mostly Cloudy"/>
+        <weather-conditions>
+          <value>
+            <visibility units="statute miles">10.00</visibility>
+          </value>
+        </weather-conditions>
+      </weather>
+      <conditions-icon type="forecast-NWS" time-layout="k-p1h-n1-1">
+        <name>Conditions Icon</name>
+        <icon-link>http://forecast.weather.gov/images/wtf/medium/nbkn.png</icon-link>
+      </conditions-icon>
+      <direction type="wind" units="degrees true" time-layout="k-p1h-n1-1">
+        <value>210</value>
+      </direction>
+      <wind-speed type="gust" units="knots" time-layout="k-p1h-n1-1">
+        <value>22</value>
+      </wind-speed>
+      <wind-speed type="sustained" units="knots" time-layout="k-p1h-n1-1">
+        <value>15</value>
+      </wind-speed>
+      <pressure type="barometer" units="inches of mercury" time-layout="k-p1h-n1-1">
+        <value>29.64</value>
+      </pressure>
+    </parameters>
+  </data>
+</dwml>

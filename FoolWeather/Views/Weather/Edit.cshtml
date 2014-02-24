@@ -1,0 +1,101 @@
+﻿@model FoolWeather.Models.Weather
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h3>Current Weather</h3>
+<hr />
+
+<table width="100%">
+    <tr>
+        <td width="35%">
+            <div>
+                <dl class="dl-horizontal">
+                    <dt>
+                        Address
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Address)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ForecastLocationDescription)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.ForecastLocationDescription)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ObservationLocationDescription)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.ObservationLocationDescription)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Temperature)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Temperature)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.RelativeHumidity)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.RelativeHumidity)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.WindDescription)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.WindDescription)
+                    </dd>
+                </dl>
+            </div>
+
+        </td>
+        <td width="30%" align="center">
+            <img src="@Url.Content(Model.ImageSourceByTemperature)" width="360px" alt="IMAGES" />
+        </td>
+        <td width="30%" align="center">
+            <img src="@Url.Content(Model.MapUrl)" alt="IMAGES" />
+        </td>
+    </tr>
+</table>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            @Html.LabelFor(model => model.NewAddress, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.NewAddress, new { style = "width: 400px;" })
+                @Html.ValidationMessageFor(model => model.NewAddress)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="New Search" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
