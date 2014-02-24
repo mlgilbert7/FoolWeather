@@ -1,5 +1,6 @@
 ﻿using FoolWeather.Models;
 using System.Web.Mvc;
+using System.Web.UI.WebControls;
 
 namespace FoolWeather.Controllers
 {

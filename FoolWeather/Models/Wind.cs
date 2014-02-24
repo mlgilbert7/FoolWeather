@@ -49,6 +49,9 @@ namespace FoolWeather.Models
 
         public static string WindDirection(float degrees)
         {
+            if (degrees == 999f)
+                return "variable directions";
+
             return WindFromDegrees(degrees).Direction;
         }
     }

@@ -167,7 +167,7 @@ namespace FoolWeather.Models
             get 
             {
                 if (XDoc == null) return null;
-                return string.Format("Winds from the {0} at {1} with gusts to {2}", 
+                return string.Format("Winds from {0} at {1} with gusts to {2}", 
                     WindDirection, WindSpeed, WindGust); 
             }
         }
